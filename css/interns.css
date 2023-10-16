@@ -211,8 +211,11 @@ body::-webkit-scrollbar-thumb
 }
 
 @media (max-width:365px){
+    .search-section{
+        margin-left: 40px;
+    }
     .back-btn{
-        top:60px;
+        /* top:60px; */
     }
 
 }
