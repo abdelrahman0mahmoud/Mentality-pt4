@@ -208,6 +208,9 @@ body::-webkit-scrollbar-thumb
     .borders-container .borders{
         margin-top: 20px;
     }
+    .search-section{
+        margin-left: 40px;
+    }
 }
 
 @media (max-width:365px){
