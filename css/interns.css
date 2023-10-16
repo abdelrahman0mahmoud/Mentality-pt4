@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'sans-serif', 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+.custom-tooltip .tooltip-inner {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  
+:root
+{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+body::-webkit-scrollbar
+{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb
+{
+    background-color: var(--main-color);
+    border-radius: 30px;
+}
+
+.btn{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    padding: 8px 20px;
+    margin-left: 10px;
+
+    border-radius: 15px;
+
+
+    transition: .2s;
+}
+.btn:hover{
+    background-color: gray;
+}
+
+.back-btn{
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 15px;
+
+    font-size: 1.5rem;
+    color: var(--bg-color);
+}
+.back-btn:hover{
+    opacity: .7;
+}
+
+/**/
+.interns-screen{
+    width: 100%;
+    height: 100vh;
+}
+
+.search-section{
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.search-section input{
+    width: 50%;
+    height: 60%;
+    border-radius: 10px;
+
+    padding: 0 10px;
+}
+.search-section input::placeholder{
+    text-align: center;
+}
+
+.borders-container{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+
+}
+
+.borders-container .borders{
+    width: 90%;
+    padding: 3% 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:25px;
+}
+
+.borders-container .borders .border{
+    flex-basis: 20%;
+    min-width: 200px;
+    min-height: 250px;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.borders-container .borders .border img{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.borders-container .borders .border.golden{
+    /* outline: 1px solid gold; */
+    box-shadow: 0 0 10px gold;
+}
+.borders-container .borders .border.silver{
+    /* outline: 1px solid silver; */
+    box-shadow: 0 0 10px silver;
+}
+.borders-container .borders .border.bronze{
+    /* outline: 1px solid brown; */
+    box-shadow: 0 0 10px brown;
+}
+
+.borders-container .borders .border img.golden{
+    /* box-shadow: 0 0 5px gold; */
+    /* border: 1px solid gold; */
+}
+.borders-container .borders .border img.silver{
+    /* box-shadow: 0 0 5px silver; */
+    /* border: 1px solid silver; */
+}
+.borders-container .borders .border img.bronze{
+    /* box-shadow: 0 0 5px brown; */
+    /* border: 1px solid brown; */
+}
+
+.borders-container .borders .border p
+{
+    font-size: 15px;
+    margin: 2px;
+}
+
+
+
+
+
+
+
+/* BreakPoints */
+@media (max-width:1200px) {
+
+
+}
+@media (max-width:768px) 
+{
+
+
+}
+
+
+@media (max-width:617px){
+
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+    .borders-container .borders{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:365px){
+
+}

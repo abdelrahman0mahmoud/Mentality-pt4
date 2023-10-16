@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="icon" href="img/logo/fav/5-removebg-preview.png">
+    <title>Mentality | HTML Course</title>
+</head>
+<body>
+
+    <!-- back-button  -->
+    <a href="index.html" class="back-btn" id="movableDiv"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+    <!-- Course  -->
+    <div class="course-container">
+        <div class="video-container">
+            <div class="video-show">
+                <iframe allowfullscreen></iframe>
+            </div>
+
+            <div class="video-info">
+                <p class="video-title"></p>
+            </div>
+        </div>
+        <div class="lesson-playlist">
+            <div class="lessons-container">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/course.js"></script>
+    <script>
+        /*=====================enable tooltip================ */
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+        })
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+</html>

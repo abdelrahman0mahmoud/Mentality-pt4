@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+.custom-tooltip .tooltip-inner {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  
+:root
+{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+body::-webkit-scrollbar
+{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb
+{
+    background-color: var(--main-color);
+    border-radius: 30px;
+}
+
+/**/
+.screen{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.screen-content{
+    width: 90%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.screen-content nav{
+    width: 50%;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
+.screen-content nav p{
+    margin: 0;
+    font-size: 2rem;
+
+    background-color: var(--second-bg-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+.screen-content nav p:hover{
+    opacity: .7;;
+}
+
+
+.dynamic-content-container{
+    width: 100%;
+    height: 450px;
+    background-color: var(--second-bg-color);
+    
+    border-radius: 20px;
+}
+
+.lessons-content-container{
+    width: 100%;
+    height: 450px;
+    background-color: green;
+    border-radius: 20px;
+}
+
+.projects-content-container{
+    width: 100%;
+    height: 450px;
+    background-color: red;
+    border-radius: 20px;
+}
