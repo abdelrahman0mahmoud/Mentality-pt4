@@ -211,5 +211,8 @@ body::-webkit-scrollbar-thumb
 }
 
 @media (max-width:365px){
+    .back-btn{
+        top:60px;
+    }
 
 }
